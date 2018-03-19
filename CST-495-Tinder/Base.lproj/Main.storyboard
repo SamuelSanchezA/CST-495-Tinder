@@ -21,7 +21,7 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" verticalCompressionResistancePriority="751" insetsLayoutMarginsFromSafeArea="NO" image="action_buttons" translatesAutoresizingMaskIntoConstraints="NO" id="L82-qb-V36">
                                 <rect key="frame" x="0.0" y="584" width="414" height="108"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" verticalHuggingPriority="252" insetsLayoutMarginsFromSafeArea="NO" image="nav_bar" translatesAutoresizingMaskIntoConstraints="NO" id="AZq-fK-Up8">
+                            <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" verticalHuggingPriority="252" insetsLayoutMarginsFromSafeArea="NO" image="nav_bar" translatesAutoresizingMaskIntoConstraints="NO" id="AZq-fK-Up8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -33,6 +33,7 @@
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="XQ6-8o-UpZ" appends="YES" id="8gd-i5-3CI"/>
+                                            <outletCollection property="gestureRecognizers" destination="Ftt-yg-ldl" appends="YES" id="fMG-z3-nUF"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
@@ -64,6 +65,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="cardImageView" destination="daJ-0l-jlP" id="VNc-AH-c3k"/>
+                        <segue destination="dsS-pM-m0u" kind="presentation" identifier="profileSegue" id="xYk-Jm-23Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -72,13 +74,70 @@
                         <action selector="didPanImage:" destination="BYZ-38-t0r" id="NiH-BR-M8O"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="Ftt-yg-ldl">
+                    <connections>
+                        <action selector="onPictureTap:" destination="BYZ-38-t0r" id="xqt-nZ-Byk"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="475.36231884057975" y="132.88043478260872"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="7i1-My-gHX">
+            <objects>
+                <viewController id="dsS-pM-m0u" customClass="ProfileViewController" customModule="CST_495_Tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bln-Xx-Pit">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tNB-oW-hqP">
+                                <rect key="frame" x="10" y="95" width="394" height="360"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="axS-9v-xTY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="nav_bar2" translatesAutoresizingMaskIntoConstraints="NO" id="LhV-Ud-UDX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVg-VW-TSo">
+                                <rect key="frame" x="10" y="30" width="55" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="M2H-ew-3Ku" appends="YES" id="dy2-TW-VWM"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LhV-Ud-UDX" firstAttribute="top" secondItem="bln-Xx-Pit" secondAttribute="top" id="58c-Jh-1h6"/>
+                            <constraint firstItem="tNB-oW-hqP" firstAttribute="top" secondItem="LhV-Ud-UDX" secondAttribute="bottom" constant="30" id="NeU-WO-ASo"/>
+                            <constraint firstItem="bBw-aQ-aEo" firstAttribute="trailing" secondItem="tNB-oW-hqP" secondAttribute="trailing" constant="10" id="ckp-oE-Bd3"/>
+                            <constraint firstItem="tNB-oW-hqP" firstAttribute="leading" secondItem="bBw-aQ-aEo" secondAttribute="leading" constant="10" id="pWg-Ft-KfB"/>
+                            <constraint firstItem="LhV-Ud-UDX" firstAttribute="leading" secondItem="bBw-aQ-aEo" secondAttribute="leading" id="wqk-tl-jH6"/>
+                            <constraint firstItem="bBw-aQ-aEo" firstAttribute="trailing" secondItem="LhV-Ud-UDX" secondAttribute="trailing" id="zcO-13-jha"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bBw-aQ-aEo"/>
+                    </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="tNB-oW-hqP" id="Ezd-Q2-bYi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVX-5H-vFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="M2H-ew-3Ku">
+                    <connections>
+                        <action selector="onDone:" destination="dsS-pM-m0u" id="1wa-Oh-oo5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1378.2608695652175" y="132.88043478260872"/>
         </scene>
     </scenes>
     <resources>
         <image name="action_buttons" width="320" height="108"/>
         <image name="nav_bar" width="320" height="65"/>
+        <image name="nav_bar2" width="320" height="65"/>
         <image name="ryan" width="449" height="514"/>
     </resources>
 </document>

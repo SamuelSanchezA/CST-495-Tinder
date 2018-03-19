@@ -20,7 +20,6 @@ class CardsViewController: UIViewController {
     
     @IBAction func didPanImage(_ sender: UIPanGestureRecognizer) {
         let translate = sender.translation(in: view)
-        let velocity = sender.velocity(in: view)
         
         if sender.state == .began{
             cardInitialCenter = self.cardImageView.center
@@ -58,6 +57,15 @@ class CardsViewController: UIViewController {
                 })
             }
         }
+    }
+    
+    @IBAction func onPictureTap(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "profileSegue", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! ProfileViewController
+        destVC.profileImage = self.cardImageView.image
     }
     
     override func didReceiveMemoryWarning() {

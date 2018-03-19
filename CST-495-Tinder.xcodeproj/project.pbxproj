@@ -14,6 +14,7 @@
 		7EFB43C9205F5E440047E983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFB43C7205F5E440047E983 /* LaunchScreen.storyboard */; };
 		7EFB43D4205F5E440047E983 /* CST_495_TinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB43D3205F5E440047E983 /* CST_495_TinderTests.swift */; };
 		7EFB43DF205F5E440047E983 /* CST_495_TinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB43DE205F5E440047E983 /* CST_495_TinderUITests.swift */; };
+		7EFB43ED206040EF0047E983 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB43EC206040EF0047E983 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7EFB43DA205F5E440047E983 /* CST-495-TinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CST-495-TinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFB43DE205F5E440047E983 /* CST_495_TinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CST_495_TinderUITests.swift; sourceTree = "<group>"; };
 		7EFB43E0205F5E440047E983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EFB43EC206040EF0047E983 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				7EFB43BE205F5E440047E983 /* AppDelegate.swift */,
 				7EFB43C0205F5E440047E983 /* CardsViewController.swift */,
+				7EFB43EC206040EF0047E983 /* ProfileViewController.swift */,
 				7EFB43C2205F5E440047E983 /* Main.storyboard */,
 				7EFB43C5205F5E440047E983 /* Assets.xcassets */,
 				7EFB43C7205F5E440047E983 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFB43ED206040EF0047E983 /* ProfileViewController.swift in Sources */,
 				7EFB43C1205F5E440047E983 /* CardsViewController.swift in Sources */,
 				7EFB43BF205F5E440047E983 /* AppDelegate.swift in Sources */,
 			);
