@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cards View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CardsViewController" customModule="CST_495_Tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" verticalCompressionResistancePriority="751" insetsLayoutMarginsFromSafeArea="NO" image="action_buttons" translatesAutoresizingMaskIntoConstraints="NO" id="L82-qb-V36">
+                                <rect key="frame" x="0.0" y="584" width="414" height="108"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" verticalHuggingPriority="252" insetsLayoutMarginsFromSafeArea="NO" image="nav_bar" translatesAutoresizingMaskIntoConstraints="NO" id="AZq-fK-Up8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fd8-ls-SsS">
+                                <rect key="frame" x="10" y="95" width="394" height="360"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ryan" translatesAutoresizingMaskIntoConstraints="NO" id="daJ-0l-jlP">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="360"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="XQ6-8o-UpZ" appends="YES" id="8gd-i5-3CI"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="daJ-0l-jlP" firstAttribute="top" secondItem="Fd8-ls-SsS" secondAttribute="top" id="DQg-Dx-zuE"/>
+                                    <constraint firstAttribute="trailing" secondItem="daJ-0l-jlP" secondAttribute="trailing" id="PiQ-eW-flj"/>
+                                    <constraint firstAttribute="height" constant="360" id="UIh-WM-fN9"/>
+                                    <constraint firstItem="daJ-0l-jlP" firstAttribute="leading" secondItem="Fd8-ls-SsS" secondAttribute="leading" id="Z3U-Wk-EoC"/>
+                                    <constraint firstAttribute="bottom" secondItem="daJ-0l-jlP" secondAttribute="bottom" id="m0b-fM-EAU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fd8-ls-SsS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="A2s-oa-SV6"/>
+                            <constraint firstItem="AZq-fK-Up8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HMt-hm-ger"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L82-qb-V36" secondAttribute="bottom" id="NZS-B8-Zmb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L82-qb-V36" secondAttribute="trailing" id="Rma-iK-5Ot"/>
+                            <constraint firstItem="L82-qb-V36" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f7L-6G-bxd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fd8-ls-SsS" secondAttribute="trailing" constant="10" id="lFd-Eu-Fgo"/>
+                            <constraint firstItem="Fd8-ls-SsS" firstAttribute="top" secondItem="AZq-fK-Up8" secondAttribute="bottom" constant="30" id="pC3-EB-Lva"/>
+                            <constraint firstItem="AZq-fK-Up8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="wRd-7I-FjB"/>
+                            <constraint firstItem="AZq-fK-Up8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yMU-3g-QzW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cardImageView" destination="daJ-0l-jlP" id="VNc-AH-c3k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="XQ6-8o-UpZ">
+                    <connections>
+                        <action selector="didPanImage:" destination="BYZ-38-t0r" id="NiH-BR-M8O"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="475.36231884057975" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="action_buttons" width="320" height="108"/>
+        <image name="nav_bar" width="320" height="65"/>
+        <image name="ryan" width="449" height="514"/>
+    </resources>
+</document>
