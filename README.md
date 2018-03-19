@@ -1,8 +1,8 @@
-# Lab 8 - *Name of App Here*
+# Lab 8 - *Tinder*
 
-**Name of your app** is a mock Tindr app featuring gestures and custom transitions
+**Tinder** is a mock Tindr app featuring gestures and custom transitions
 
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
@@ -26,7 +26,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Alt Text](https://github.com/SamuelSanchezA/CST-495-Tinder/blob/master/lab-8.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
