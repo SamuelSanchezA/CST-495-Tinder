@@ -15,6 +15,8 @@
 		7EFB43D4205F5E440047E983 /* CST_495_TinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB43D3205F5E440047E983 /* CST_495_TinderTests.swift */; };
 		7EFB43DF205F5E440047E983 /* CST_495_TinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB43DE205F5E440047E983 /* CST_495_TinderUITests.swift */; };
 		7EFB43ED206040EF0047E983 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB43EC206040EF0047E983 /* ProfileViewController.swift */; };
+		7EFB43F0206045A60047E983 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB43EE206045A60047E983 /* BaseTransition.swift */; };
+		7EFB43F1206045A60047E983 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB43EF206045A60047E983 /* FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7EFB43DE205F5E440047E983 /* CST_495_TinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CST_495_TinderUITests.swift; sourceTree = "<group>"; };
 		7EFB43E0205F5E440047E983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EFB43EC206040EF0047E983 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7EFB43EE206045A60047E983 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTransition.swift; path = "../../../Downloads/Transition Files/BaseTransition.swift"; sourceTree = "<group>"; };
+		7EFB43EF206045A60047E983 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = "../../../Downloads/Transition Files/FadeTransition.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				7EFB43BE205F5E440047E983 /* AppDelegate.swift */,
 				7EFB43C0205F5E440047E983 /* CardsViewController.swift */,
 				7EFB43EC206040EF0047E983 /* ProfileViewController.swift */,
+				7EFB43EE206045A60047E983 /* BaseTransition.swift */,
+				7EFB43EF206045A60047E983 /* FadeTransition.swift */,
 				7EFB43C2205F5E440047E983 /* Main.storyboard */,
 				7EFB43C5205F5E440047E983 /* Assets.xcassets */,
 				7EFB43C7205F5E440047E983 /* LaunchScreen.storyboard */,
@@ -263,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EFB43ED206040EF0047E983 /* ProfileViewController.swift in Sources */,
+				7EFB43F1206045A60047E983 /* FadeTransition.swift in Sources */,
+				7EFB43F0206045A60047E983 /* BaseTransition.swift in Sources */,
 				7EFB43C1205F5E440047E983 /* CardsViewController.swift in Sources */,
 				7EFB43BF205F5E440047E983 /* AppDelegate.swift in Sources */,
 			);

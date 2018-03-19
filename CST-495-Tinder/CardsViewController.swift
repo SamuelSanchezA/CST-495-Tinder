@@ -12,9 +12,11 @@ class CardsViewController: UIViewController {
 
     var cardInitialCenter: CGPoint!
     @IBOutlet weak var cardImageView: UIImageView!
+    var fadeTransition: FadeTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cardImageView.layer.cornerRadius = 11
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -65,6 +67,10 @@ class CardsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! ProfileViewController
+        destVC.modalPresentationStyle = UIModalPresentationStyle.custom
+        fadeTransition = FadeTransition()
+        destVC.transitioningDelegate = fadeTransition
+        fadeTransition.duration = 0.4
         destVC.profileImage = self.cardImageView.image
     }
     
